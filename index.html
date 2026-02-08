@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umesh Kotwal | Frontend Developer</title>
+    <meta name="description" content="Portfolio of Umesh Kotwal, a Frontend Developer specializing in React.js and Next.js. View my projects, skills, and experience." />
+    <meta name="keywords" content="Umesh Kotwal, Frontend Developer, React.js, Next.js, Web Developer, Portfolio, Surat, India" />
+    <meta name="author" content="Umesh Kotwal" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://umeshkotwal.vercel.app/" />
+    <meta property="og:title" content="Umesh Kotwal | Frontend Developer" />
+    <meta property="og:description" content="Portfolio of Umesh Kotwal, a Frontend Developer specializing in React.js and Next.js." />
+    <meta property="og:image" content="https://umeshkotwal.vercel.app/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://umeshkotwal.vercel.app/" />
+    <meta property="twitter:title" content="Umesh Kotwal | Frontend Developer" />
+    <meta property="twitter:description" content="Portfolio of Umesh Kotwal, a Frontend Developer specializing in React.js and Next.js." />
+    <meta property="twitter:image" content="https://umeshkotwal.vercel.app/og-image.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.ico">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            animation: {
+              "gradient-slow": "gradient 8s ease infinite",
+              float: "float 6s ease-in-out infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              gradient: {
+                "0%, 100%": { "background-position": "0% 50%" },
+                "50%": { "background-position": "100% 50%" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .dark .glass {
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bg-mesh {
+        background-color: #ffffff;
+        background-image:
+          radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+          radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+      }
+      .dark .bg-mesh {
+        background-color: #030712;
+        background-image:
+          radial-gradient(at 0% 0%, hsla(253, 70%, 15%, 1) 0, transparent 50%),
+          radial-gradient(at 50% 0%, hsla(225, 80%, 10%, 1) 0, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(339, 70%, 15%, 1) 0, transparent 50%);
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "framer-motion": "https://esm.sh/framer-motion@^12.26.2"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="bg-white dark:bg-gray-950 transition-colors duration-500">
+    <div id="root"></div>
+    <script type="module" src="/index.jsx"></script>
+  </body>
+</html>
