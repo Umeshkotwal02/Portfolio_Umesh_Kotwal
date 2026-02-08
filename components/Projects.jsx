@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -7,75 +6,75 @@ const projects = [
     id: 1,
     name: "Kesaria Textile Company",
     tech: ["React.js", "SCSS", "Bootstrap", "React-Bootstrap", "SEO Optimization"],
-    image: "../assets/img/kesaria-home.webp",
+    image: "/img/kesaria-home.webp",
     description: "A large-scale B2B textile marketplace focused on SEO-driven growth, achieving high Google rankings through server-side rendering and dynamic metadata optimization.",
     longDescription: "Handled SEO challenges for dynamically generated category pages by implementing server-side rendering (SSR) in React.js, ensuring proper indexing by search engines. Built support for multi-vendor product listings and real-time lead generation tailored for textile wholesalers.",
     link: "https://kesariatextile.com/",
     github: "",
     screenshots: [
-      "../assets/img/kes-1.webp",
-      "../assets/img/kes-3.webp",
-      "../assets/img/kes-2.webp"
+      "/img/kes-1.webp",
+      "/img/kes-3.webp",
+      "/img/kes-2.webp"
     ]
   },
   {
     id: 2,
     name: "The Magic Homes Portal",
     tech: ["Next.js", "Redux", "Firebase", "Bootstrap"],
-    image: "../assets/img/magic-home.webp",
+    image: "/img/magic-home.webp",
     description: "A real estate marketplace enabling users to explore verified properties for rent and sale and connect with administrators through direct enquiries.",
     longDescription: "Implemented Firebase authentication for secure login and user management. Built dynamic property listing pages with SEO-friendly routing and developed an enquiry and lead management system to capture and forward user enquiries directly to the admin panel.",
     link: "http://themagichomes.in/",
     github: "",
     screenshots: [
-      "../assets/img/mag-1.webp",
-      "../assets/img/mag-2.webp",
-      "../assets/img/mag-3.webp"
+      "/img/mag-1.webp",
+      "/img/mag-2.webp",
+      "/img/mag-3.webp"
     ]
   },
   {
     id: 3,
     name: "Kapoor Lehenga Saree",
     tech: ["ReactJS", "Redux", "Razorpay", "Tailwind"],
-    image: "../assets/img/kapoor-home.webp",
+    image: "/img/kapoor-home.webp",
     description: "A premium e-commerce experience for high-end ethnic wear. Features a dynamic catalog, sophisticated filtering, and a seamless checkout process integrated with Razorpay. Optimized for high conversion and mobile responsiveness.",
     longDescription: "This project involved building a robust architecture to handle thousands of product variants. I implemented Redux Toolkit for complex state management of the shopping cart and user sessions. The UI focuses on large, high-quality imagery to showcase textile details, utilizing glassmorphism elements to maintain a luxury feel.",
     link: "",
     github: "https://github.com/umeshkotwal02",
     screenshots: [
-      "../assets/img/kp-3.webp",
-      "../assets/img/kp-2.webp",
-      "../assets/img/kp-1.webp",
+      "/img/kp-3.webp",
+      "/img/kp-2.webp",
+      "/img/kp-1.webp",
     ]
   },
   {
     id: 4,
     name: "Goldman ERP Software",
     tech: ["React.js", "Bootstrap", "Vuexy Template"],
-    image: "../assets/img/goldman-home.webp",
+    image: "/img/goldman-home.webp",
     description: "A centralized ERP platform designed to streamline business operations and financial tracking.",
     longDescription: "Implemented a modular ERP architecture covering sales, purchase, inventory, and accounting processes. Developed a real-time dashboard for analytics and reporting, and built transaction and voucher management modules including receipt, payment, contra, and journal entries to improve operational efficiency.",
     link: "https://goldman.erpsoftwaresurat.com/login",
     github: "",
     screenshots: [
-      "../assets/img/gd-1.webp",
-      "../assets/img/gd-2.webp",
-      "../assets/img/gd-3.webp"
+      "/img/gd-1.webp",
+      "/img/gd-2.webp",
+      "/img/gd-3.webp"
     ]
   },
   {
     id: 5,
     name: "Resume Builder",
     tech: ["Next.js", "Node.js", "MySQL", "Bootstrap", "Google / Facebook / LinkedIn OAuth", "Razorpay", "Stripe"],
-    image: "../assets/img/resume-home.webp",
+    image: "/img/resume-home.webp",
     description: "A full-stack resume builder platform that enables users to create professional resumes using customizable templates and access premium features through secure subscriptions.",
     longDescription: "Developed a scalable full-stack resume builder application with secure authentication and role-based access. Implemented email-based login along with social authentication via Google, Facebook, and LinkedIn. Built resume creation and management workflows with multiple template options and export functionality. Integrated Razorpay and Stripe for subscription-based access to premium templates and used MySQL for reliable and persistent data storage.",
     link: "",
     github: "https://github.com/Umeshkotwal02/Resume-Builder",
     screenshots: [
-      "../assets/img/rs-1.webp",
-      "../assets/img/rs-2.webp",
-      "../assets/img/rs-3.webp"
+      "/img/rs-1.webp",
+      "/img/rs-2.webp",
+      "/img/rs-3.webp"
     ]
   },
 ];
