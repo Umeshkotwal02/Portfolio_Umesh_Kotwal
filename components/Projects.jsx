@@ -49,12 +49,12 @@ const projects = [
   },
   {
     id: 4,
-    name: "Goldman ERP Software",
-    tech: ["React.js", "Bootstrap", "Vuexy Template"],
+    name: "ERP SOFTWARE",
+    tech: ["React.js", "Bootstrap", "Vuexy Template", "Node.js", "MySQL", "Redux"],
     image: "/img/goldman-home.webp",
     description: "A centralized ERP platform designed to streamline business operations and financial tracking.",
     longDescription: "Implemented a modular ERP architecture covering sales, purchase, inventory, and accounting processes. Developed a real-time dashboard for analytics and reporting, and built transaction and voucher management modules including receipt, payment, contra, and journal entries to improve operational efficiency.",
-    link: "https://goldman.erpsoftwaresurat.com/login",
+    link: "https://erpsoftwaresurat.com/",
     github: "",
     screenshots: [
       "/img/gd-1.webp",
@@ -114,8 +114,9 @@ export const Projects = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="group glass rounded-[2.5rem] overflow-hidden shadow-xl border border-white/40 dark:border-white/5 bg-white/40 dark:bg-black/20"
+              onClick={() => setSelectedProject(project)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
+              <div className="relative aspect-[4/3] overflow-hidden cursor-pointer">
                 <img
                   src={project.image}
                   alt={project.name}
@@ -173,7 +174,7 @@ export const Projects = () => {
       {/* Project Details Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 pb-4 pt-24 md:p-8 md:pt-28">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -186,7 +187,7 @@ export const Projects = () => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto glass bg-white dark:bg-gray-950 rounded-[3rem] border border-white/20 dark:border-white/10 shadow-2xl p-6 md:p-12 custom-scrollbar"
+              className="relative w-full max-w-5xl max-h-[80vh] overflow-y-auto glass bg-white dark:bg-gray-950 rounded-[3rem] border border-white/20 dark:border-white/10 shadow-2xl p-6 md:p-12 custom-scrollbar"
             >
               <button
                 onClick={() => setSelectedProject(null)}
@@ -195,8 +196,8 @@ export const Projects = () => {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div className="space-y-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div className="space-y-8 lg:sticky lg:top-0 self-start">
                   <div>
                     <h3 className="text-4xl font-black text-gray-900 dark:text-white mb-4 leading-tight">{selectedProject.name}</h3>
                     <div className="flex flex-wrap gap-2">

@@ -6,7 +6,8 @@ import {
   FaJs, FaReact, FaHtml5, FaCss3, FaSass, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaDatabase
 } from 'react-icons/fa';
 import {
-  SiC, SiNextdotjs, SiRedux, SiTailwindcss, SiMysql, SiFirebase, SiHostinger, SiVercel, SiNetlify
+  SiC, SiNextdotjs, SiRedux, SiTailwindcss, SiMysql, SiFirebase, SiHostinger, SiVercel, SiNetlify,
+  SiReactbootstrap
 } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 
@@ -28,7 +29,8 @@ const skillData = [
       { name: "CSS3", icon: <FaCss3 className="text-blue-500" /> },
       { name: "SCSS", icon: <FaSass className="text-pink-500" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
-      { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> }
+      { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
+      { name: "React Bootstrap", icon: <SiReactbootstrap className="text-purple-600" /> }
     ]
   },
   {

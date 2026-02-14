@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import cvPDF from "../assets/Umesh_Kotwal.pdf";
+import cvPDF from "../assets/Umesh Kotwal-Frontend_Dev.pdf";
 import aboutImg from "../assets/about-us.jpeg";
 
 export const About = () => {
