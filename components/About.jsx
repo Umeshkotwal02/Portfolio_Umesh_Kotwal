@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import cvPDF from "../assets/Umesh Kotwal-Frontend_Dev.pdf";
+import cvPDF from "../assets/Umesh Kotwal-Frontend-Dev.pdf";
 import aboutImg from "../assets/about-us.jpeg";
 
 export const About = () => {
@@ -58,7 +58,7 @@ export const About = () => {
             <div className="mt-8">
               <motion.a
                 href={cvPDF}
-                download="Umesh_Kotwal_CV"
+                download="Umesh Kotwal-Frontend_Dev.pdf"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(139, 92, 246, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-bold shadow-lg shadow-purple-500/30 transition-all"

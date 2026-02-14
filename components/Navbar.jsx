@@ -39,7 +39,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             className="text-2xl font-black tracking-tighter cursor-pointer shrink-0"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <img src="assets/logo.webp" className="w-10" alt="navbar-logo" />
+            <img src="/img/logo.webp" className="w-10" alt="navbar-logo" />
           </motion.div>
 
           <div className="hidden md:flex items-center gap-10">
@@ -109,7 +109,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
               className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white dark:bg-gray-950 z-[70] shadow-2xl p-10 flex flex-col"
             >
               <div className="flex items-center justify-between mb-auto">
-                <img src="assets/logo.webp" className="w-10" alt="navbar-logo-mobile" />
+                <img src="/img/logo.webp" className="w-10" alt="navbar-logo-mobile" />
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-3 rounded-2xl bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white"
