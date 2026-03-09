@@ -19,21 +19,6 @@ const projects = [
   },
   {
     id: 2,
-    name: "The Magic Homes Portal",
-    tech: ["Next.js", "Redux", "Firebase", "Bootstrap"],
-    image: "/img/magic-home.webp",
-    description: "A real estate marketplace enabling users to explore verified properties for rent and sale and connect with administrators through direct enquiries.",
-    longDescription: "Implemented Firebase authentication for secure login and user management. Built dynamic property listing pages with SEO-friendly routing and developed an enquiry and lead management system to capture and forward user enquiries directly to the admin panel.",
-    link: "http://themagichomes.in/",
-    github: "",
-    screenshots: [
-      "/img/mag-1.webp",
-      "/img/mag-2.webp",
-      "/img/mag-3.webp"
-    ]
-  },
-  {
-    id: 3,
     name: "Kapoor Lehenga Saree",
     tech: ["ReactJS", "Redux", "Razorpay", "Tailwind"],
     image: "/img/kapoor-home.webp",
@@ -48,7 +33,7 @@ const projects = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     name: "ERP SOFTWARE",
     tech: ["React.js", "Bootstrap", "Vuexy Template", "Node.js", "MySQL", "Redux"],
     image: "/img/goldman-home.webp",
@@ -63,7 +48,7 @@ const projects = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     name: "Resume Builder",
     tech: ["Next.js", "Node.js", "MySQL", "Bootstrap", "Google / Facebook / LinkedIn OAuth", "Razorpay", "Stripe"],
     image: "/img/resume-home.webp",
@@ -77,6 +62,23 @@ const projects = [
       "/img/rs-3.webp"
     ]
   },
+  {
+    id: 5,
+    name: "The Magic Homes Portal",
+    tech: ["Next.js", "Redux", "Firebase", "Bootstrap"],
+    image: "/img/magic-home.webp",
+    description: "A real estate marketplace enabling users to explore verified properties for rent and sale and connect with administrators through direct enquiries.",
+    longDescription: "Implemented Firebase authentication for secure login and user management. Built dynamic property listing pages with SEO-friendly routing and developed an enquiry and lead management system to capture and forward user enquiries directly to the admin panel.",
+    link: "http://themagichomes.in/",
+    github: "",
+    screenshots: [
+      "/img/mag-1.webp",
+      "/img/mag-2.webp",
+      "/img/mag-3.webp"
+    ]
+  },
+
+
 ];
 
 export const Projects = () => {

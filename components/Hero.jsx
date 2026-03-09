@@ -6,6 +6,7 @@ import profileImg from '../assets/profile-img.jpeg';
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 px-6">
+      
       <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0], opacity: [0.3, 0.5, 0.3] }}
@@ -110,6 +111,46 @@ export const Hero = () => {
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
+            {/* React Logo Animation */}
+            <motion.div
+              className="absolute top-[-7%] right-[10%] z-20"
+              animate={{
+                y: [0, -15, 0],
+                rotate: [0, 5, -5, 0]
+              }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="relative group">
+                <div className="absolute inset-0 bg-cyan-400/20 blur-xl rounded-full group-hover:bg-cyan-400/40 transition-all" />
+                <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-12 h-12 md:w-14 md:h-14 text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">
+                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                    <g stroke="currentColor" strokeWidth="1" fill="none">
+                      <ellipse rx="10" ry="4.5" transform="rotate(0 12 12)" cx="12" cy="12" />
+                      <ellipse rx="10" ry="4.5" transform="rotate(60 12 12)" cx="12" cy="12" />
+                      <ellipse rx="10" ry="4.5" transform="rotate(120 12 12)" cx="12" cy="12" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Next.js Logo Animation */}
+            <motion.div
+              className="absolute bottom-[-3%] left-[10%] z-20"
+              animate={{
+                y: [0, 15, 0],
+                scale: [1, 1.05, 1]
+              }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            >
+              <div className="relative group">
+                <div className="absolute inset-0 bg-white/5 blur-lg rounded-full" />
+                <div className="relative w-14 h-14 md:w-18 md:h-18 glass rounded-full flex items-center justify-center border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                  <div className="text-white font-black text-[10px] md:text-xs tracking-tighter">NEXT.js</div>
+                </div>
+              </div>
+            </motion.div>
           </a>
         </motion.div>
       </div>
